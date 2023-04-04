@@ -204,6 +204,7 @@
             txtUserFirstName.BackColor = SystemColors.Control;
             txtUserFirstName.Enabled = false;
             txtUserFirstName.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUserFirstName.ForeColor = Color.Gold;
             txtUserFirstName.Location = new Point(376, 272);
             txtUserFirstName.Margin = new Padding(3, 2, 3, 2);
             txtUserFirstName.Name = "txtUserFirstName";
@@ -215,6 +216,7 @@
             txtUserLastName.BackColor = SystemColors.Control;
             txtUserLastName.Enabled = false;
             txtUserLastName.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUserLastName.ForeColor = Color.Gold;
             txtUserLastName.Location = new Point(376, 344);
             txtUserLastName.Margin = new Padding(3, 2, 3, 2);
             txtUserLastName.Name = "txtUserLastName";
@@ -226,6 +228,7 @@
             txtHeight.BackColor = SystemColors.Control;
             txtHeight.Enabled = false;
             txtHeight.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtHeight.ForeColor = Color.Gold;
             txtHeight.Location = new Point(376, 411);
             txtHeight.Margin = new Padding(3, 2, 3, 2);
             txtHeight.Name = "txtHeight";
@@ -237,6 +240,7 @@
             txtWeight.BackColor = SystemColors.Control;
             txtWeight.Enabled = false;
             txtWeight.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtWeight.ForeColor = Color.Gold;
             txtWeight.Location = new Point(376, 491);
             txtWeight.Margin = new Padding(3, 2, 3, 2);
             txtWeight.Name = "txtWeight";
@@ -248,6 +252,7 @@
             txtMail.BackColor = SystemColors.Control;
             txtMail.Enabled = false;
             txtMail.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtMail.ForeColor = Color.Gold;
             txtMail.Location = new Point(376, 567);
             txtMail.Margin = new Padding(3, 2, 3, 2);
             txtMail.Name = "txtMail";
@@ -259,6 +264,7 @@
             txtPassword.BackColor = SystemColors.Control;
             txtPassword.Enabled = false;
             txtPassword.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPassword.ForeColor = Color.Gold;
             txtPassword.Location = new Point(376, 648);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";

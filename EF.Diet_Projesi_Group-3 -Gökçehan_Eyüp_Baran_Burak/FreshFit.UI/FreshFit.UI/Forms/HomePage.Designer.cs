@@ -299,7 +299,7 @@
             // 
             lblUserWeight.AutoSize = true;
             lblUserWeight.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblUserWeight.ForeColor = Color.Black;
+            lblUserWeight.ForeColor = Color.Gold;
             lblUserWeight.Location = new Point(864, 92);
             lblUserWeight.Name = "lblUserWeight";
             lblUserWeight.Size = new Size(30, 23);
@@ -310,7 +310,7 @@
             // 
             lblUserHeight.AutoSize = true;
             lblUserHeight.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblUserHeight.ForeColor = Color.Black;
+            lblUserHeight.ForeColor = Color.Gold;
             lblUserHeight.Location = new Point(584, 95);
             lblUserHeight.Name = "lblUserHeight";
             lblUserHeight.Size = new Size(44, 23);
@@ -321,7 +321,7 @@
             // 
             lblUserName.AutoSize = true;
             lblUserName.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblUserName.ForeColor = Color.Black;
+            lblUserName.ForeColor = Color.Gold;
             lblUserName.Location = new Point(229, 92);
             lblUserName.Name = "lblUserName";
             lblUserName.Size = new Size(31, 23);
