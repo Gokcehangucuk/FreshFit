@@ -14,7 +14,7 @@ using System.Windows.Xps;
 
 namespace FreshFit.UI.ProfileControls
 {
-    
+
     public partial class ProfileControlsActivity : UserControl
     {
         FreshFitControllers controllers;
@@ -26,7 +26,7 @@ namespace FreshFit.UI.ProfileControls
         }
         private void ıcnbtnAdd_Click(object sender, EventArgs e)
         {
-            if (index >= 0)
+            if (txtName.Text != null && nmrForCalory.Value >= 0)
             {
                 if (!(UserControlFunction.CheckForIsEmpty(txtName.Text) && UserControlFunction.CheckForSpecialCharacter(txtName.Text) && UserControlFunction.CheckForIsDigit(txtName.Text)))
                 {
@@ -35,10 +35,10 @@ namespace FreshFit.UI.ProfileControls
                     ıcnbtnActivityList_Click(sender, e);
                     TextClear(txtName, nmrForCalory);
                 }
-                else{ MessageBox.Show("Ekleme Başarısız");}
+                else { MessageBox.Show("Ekleme Başarısız"); }
             }
-            else { MessageBox.Show("Aktivite seçimi yapınız.");}
-            
+            else { MessageBox.Show("Lütfen yeni ekleyeceğiniz aktivitenin bilgilerini giriniz."); }
+
         }
         private void ıcnbtnActivityList_Click(object sender, EventArgs e)
         {
@@ -71,7 +71,7 @@ namespace FreshFit.UI.ProfileControls
 
         private void ıcnbtnDelete_Click(object sender, EventArgs e)
         {
-            if (index>=0 )
+            if (index >= 0)
             {
                 string fromDgw = dgwActivity.CurrentRow.Cells[0].Value.ToString();
                 var targetObje = controllers.GetAllData<Activity>().FirstOrDefault(x => x.Name == fromDgw);

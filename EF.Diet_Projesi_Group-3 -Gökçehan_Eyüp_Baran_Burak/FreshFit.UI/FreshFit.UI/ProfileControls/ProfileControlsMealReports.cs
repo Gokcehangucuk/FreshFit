@@ -37,6 +37,7 @@ namespace FreshFit.UI.ProfileControls
         }
         private void ıcnbtnFoodLıst_Click(object sender, EventArgs e)
         {
+            selectedButton = true;
             EnableTrueFoodFunc();
             dgwList.DataSource = _db.Foods.Join(_db.FoodTypeFoods, x1 => x1.ID, x2 => x2.FoodID, (x1, x2) => new { Tablo1 = x1, Tablo2 = x2 }).
            Join(_db.FoodsTypes, x1x2 => x1x2.Tablo2.FoodTypeID, x3 => x3.ID, (x1x2, x3) =>
@@ -70,6 +71,7 @@ namespace FreshFit.UI.ProfileControls
                     var removeObje = controllers.GetAllData<UserActivity>().Where(x => x.ActivityID == targetObje.ID || x.Date == DateTime.Today || x.LoseCalory == (Convert.ToDouble(calory))).First();
                     controllers.RemoveDataByID<Activity>(removeObje.ID);
                 }
+                ıcnbtnMyFood_Click(sender, e);
             }
             else { MessageBox.Show("Listeden seçim yapılmadı"); }
 
@@ -195,6 +197,7 @@ namespace FreshFit.UI.ProfileControls
                 controllers.AddData<Water>(new Water { Date = DateTime.Today, Quantity = (int)(nmrWaterQuantity.Value), UserID = Login.user.ID });
                 lblTakenCalory.Text = TotalCaloriesIntake().ToString();
                 lblRemainingCalories.Text = RemainingCalories().ToString();
+                ıcnbtnMyFood_Click(sender, e);
             }
             else { MessageBox.Show("Listeden seçim yapılmadı"); }
         }

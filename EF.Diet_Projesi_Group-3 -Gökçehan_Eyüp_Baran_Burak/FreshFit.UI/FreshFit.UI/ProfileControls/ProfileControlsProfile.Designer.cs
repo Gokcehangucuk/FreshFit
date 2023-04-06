@@ -53,6 +53,12 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            label1 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)pbUserPicture).BeginInit();
             SuspendLayout();
             // 
@@ -79,9 +85,8 @@
             ıconButton1.Location = new Point(71, 259);
             ıconButton1.Margin = new Padding(4, 3, 4, 3);
             ıconButton1.Name = "ıconButton1";
-            ıconButton1.Size = new Size(266, 58);
+            ıconButton1.Size = new Size(76, 58);
             ıconButton1.TabIndex = 4;
-            ıconButton1.Text = "Kullanıcı  Adı :";
             ıconButton1.TextAlign = ContentAlignment.MiddleRight;
             ıconButton1.UseVisualStyleBackColor = true;
             // 
@@ -98,9 +103,8 @@
             ıconButton7.Location = new Point(71, 411);
             ıconButton7.Margin = new Padding(4, 3, 4, 3);
             ıconButton7.Name = "ıconButton7";
-            ıconButton7.Size = new Size(266, 47);
+            ıconButton7.Size = new Size(76, 47);
             ıconButton7.TabIndex = 5;
-            ıconButton7.Text = "Boy :";
             ıconButton7.TextAlign = ContentAlignment.MiddleRight;
             ıconButton7.UseVisualStyleBackColor = true;
             // 
@@ -117,9 +121,8 @@
             ıconButton2.Location = new Point(71, 332);
             ıconButton2.Margin = new Padding(4, 3, 4, 3);
             ıconButton2.Name = "ıconButton2";
-            ıconButton2.Size = new Size(266, 58);
+            ıconButton2.Size = new Size(76, 58);
             ıconButton2.TabIndex = 6;
-            ıconButton2.Text = "Kullanıcı  Soyadı :";
             ıconButton2.TextAlign = ContentAlignment.MiddleRight;
             ıconButton2.UseVisualStyleBackColor = true;
             // 
@@ -136,9 +139,8 @@
             ıconButton8.Location = new Point(71, 478);
             ıconButton8.Margin = new Padding(4, 3, 4, 3);
             ıconButton8.Name = "ıconButton8";
-            ıconButton8.Size = new Size(266, 58);
+            ıconButton8.Size = new Size(76, 58);
             ıconButton8.TabIndex = 7;
-            ıconButton8.Text = "Kilo :";
             ıconButton8.TextAlign = ContentAlignment.MiddleRight;
             ıconButton8.UseVisualStyleBackColor = true;
             // 
@@ -155,9 +157,8 @@
             ıconButton3.Location = new Point(71, 554);
             ıconButton3.Margin = new Padding(4, 3, 4, 3);
             ıconButton3.Name = "ıconButton3";
-            ıconButton3.Size = new Size(266, 58);
+            ıconButton3.Size = new Size(76, 58);
             ıconButton3.TabIndex = 8;
-            ıconButton3.Text = "Mail :";
             ıconButton3.TextAlign = ContentAlignment.MiddleRight;
             ıconButton3.UseVisualStyleBackColor = true;
             // 
@@ -174,9 +175,8 @@
             ıconButton4.Location = new Point(71, 636);
             ıconButton4.Margin = new Padding(4, 3, 4, 3);
             ıconButton4.Name = "ıconButton4";
-            ıconButton4.Size = new Size(266, 58);
+            ıconButton4.Size = new Size(76, 58);
             ıconButton4.TabIndex = 9;
-            ıconButton4.Text = "Şifre :";
             ıconButton4.TextAlign = ContentAlignment.MiddleRight;
             ıconButton4.UseVisualStyleBackColor = true;
             // 
@@ -410,10 +410,70 @@
             label4.Text = "Şifre Tekrar:";
             label4.Visible = false;
             // 
+            // label1
+            // 
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(193, 272);
+            label1.Name = "label1";
+            label1.Size = new Size(144, 34);
+            label1.TabIndex = 53;
+            label1.Text = "Kullanıcı Adı :";
+            // 
+            // label5
+            // 
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(163, 344);
+            label5.Name = "label5";
+            label5.Size = new Size(184, 34);
+            label5.TabIndex = 54;
+            label5.Text = "Kullanıcı Soyadı :";
+            // 
+            // label6
+            // 
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(272, 411);
+            label6.Name = "label6";
+            label6.Size = new Size(65, 34);
+            label6.TabIndex = 55;
+            label6.Text = "Boy :";
+            // 
+            // label7
+            // 
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label7.Location = new Point(272, 490);
+            label7.Name = "label7";
+            label7.Size = new Size(65, 34);
+            label7.TabIndex = 56;
+            label7.Text = "Kilo :";
+            // 
+            // label8
+            // 
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label8.Location = new Point(272, 569);
+            label8.Name = "label8";
+            label8.Size = new Size(65, 34);
+            label8.TabIndex = 57;
+            label8.Text = "Mail :";
+            // 
+            // label9
+            // 
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label9.Location = new Point(272, 652);
+            label9.Name = "label9";
+            label9.Size = new Size(74, 34);
+            label9.TabIndex = 58;
+            label9.Text = "Şifre :";
+            // 
             // ProfileControlsProfile
             // 
             AutoScaleDimensions = new SizeF(10F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -477,5 +537,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Label label1;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
     }
 }

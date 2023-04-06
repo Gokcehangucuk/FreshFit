@@ -45,11 +45,9 @@
             ıcnbtnAdd = new FontAwesome.Sharp.IconButton();
             textBox1 = new TextBox();
             ıcnbtnActivityList = new FontAwesome.Sharp.IconButton();
-            ıconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)dgwActivity).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nmrForCalory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nmrUpdateForCalory).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtActivityFound
@@ -250,26 +248,10 @@
             ıcnbtnActivityList.UseVisualStyleBackColor = true;
             ıcnbtnActivityList.Click += ıcnbtnActivityList_Click;
             // 
-            // ıconPictureBox1
-            // 
-            ıconPictureBox1.BackColor = SystemColors.Control;
-            ıconPictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            ıconPictureBox1.ForeColor = SystemColors.ActiveCaptionText;
-            ıconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Question;
-            ıconPictureBox1.IconColor = SystemColors.ActiveCaptionText;
-            ıconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ıconPictureBox1.IconSize = 28;
-            ıconPictureBox1.Location = new Point(439, 39);
-            ıconPictureBox1.Name = "ıconPictureBox1";
-            ıconPictureBox1.Size = new Size(31, 28);
-            ıconPictureBox1.TabIndex = 53;
-            ıconPictureBox1.TabStop = false;
-            // 
             // ProfileControlsActivity
             // 
             AutoScaleDimensions = new SizeF(9F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(ıconPictureBox1);
             Controls.Add(ıcnbtnActivityList);
             Controls.Add(textBox1);
             Controls.Add(ıcnbtnUpdate);
@@ -293,7 +275,6 @@
             ((System.ComponentModel.ISupportInitialize)dgwActivity).EndInit();
             ((System.ComponentModel.ISupportInitialize)nmrForCalory).EndInit();
             ((System.ComponentModel.ISupportInitialize)nmrUpdateForCalory).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -315,6 +296,5 @@
         private FontAwesome.Sharp.IconButton ıcnbtnAdd;
         private TextBox textBox1;
         private FontAwesome.Sharp.IconButton ıcnbtnActivityList;
-        private FontAwesome.Sharp.IconPictureBox ıconPictureBox1;
     }
 }

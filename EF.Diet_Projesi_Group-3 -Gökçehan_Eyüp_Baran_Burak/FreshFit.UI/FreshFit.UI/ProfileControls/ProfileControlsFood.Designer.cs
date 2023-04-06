@@ -61,7 +61,6 @@
             ıcnbtnAdd = new FontAwesome.Sharp.IconButton();
             ıcnbtnDelete = new FontAwesome.Sharp.IconButton();
             ıcnbtnUpdate = new FontAwesome.Sharp.IconButton();
-            ıconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgwFood).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nmrForCaloryAdding).BeginInit();
@@ -72,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)nmrForProteinUpdating).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nmrForFatUpdating).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nmrForCarbonhydrateUpdating).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtFoundFood
@@ -464,26 +462,10 @@
             ıcnbtnUpdate.UseVisualStyleBackColor = true;
             ıcnbtnUpdate.Click += ıcnbtnUpdate_Click;
             // 
-            // ıconPictureBox1
-            // 
-            ıconPictureBox1.BackColor = SystemColors.Control;
-            ıconPictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            ıconPictureBox1.ForeColor = SystemColors.ActiveCaptionText;
-            ıconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Question;
-            ıconPictureBox1.IconColor = SystemColors.ActiveCaptionText;
-            ıconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ıconPictureBox1.IconSize = 27;
-            ıconPictureBox1.Location = new Point(446, 8);
-            ıconPictureBox1.Name = "ıconPictureBox1";
-            ıconPictureBox1.Size = new Size(27, 32);
-            ıconPictureBox1.TabIndex = 47;
-            ıconPictureBox1.TabStop = false;
-            // 
             // ProfileControlsFood
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(ıconPictureBox1);
             Controls.Add(ıcnbtnUpdate);
             Controls.Add(ıcnbtnDelete);
             Controls.Add(ıcnbtnAdd);
@@ -532,7 +514,6 @@
             ((System.ComponentModel.ISupportInitialize)nmrForProteinUpdating).EndInit();
             ((System.ComponentModel.ISupportInitialize)nmrForFatUpdating).EndInit();
             ((System.ComponentModel.ISupportInitialize)nmrForCarbonhydrateUpdating).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -572,6 +553,5 @@
         private FontAwesome.Sharp.IconButton ıcnbtnAdd;
         private FontAwesome.Sharp.IconButton ıcnbtnDelete;
         private FontAwesome.Sharp.IconButton ıcnbtnUpdate;
-        private FontAwesome.Sharp.IconPictureBox ıconPictureBox1;
     }
 }

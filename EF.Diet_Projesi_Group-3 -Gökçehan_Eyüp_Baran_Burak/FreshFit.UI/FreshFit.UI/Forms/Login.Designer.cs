@@ -110,7 +110,6 @@
             txtMail.Name = "txtMail";
             txtMail.Size = new Size(317, 45);
             txtMail.TabIndex = 40;
-            txtMail.Text = "Admin@gmail.com";
             txtMail.Leave += txtMail_Leave;
             // 
             // label4
@@ -131,7 +130,6 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(317, 45);
             txtPassword.TabIndex = 42;
-            txtPassword.Text = "Admin123.";
             txtPassword.TextChanged += txtPassword_TextChanged;
             txtPassword.Leave += txtPassword_Leave;
             // 

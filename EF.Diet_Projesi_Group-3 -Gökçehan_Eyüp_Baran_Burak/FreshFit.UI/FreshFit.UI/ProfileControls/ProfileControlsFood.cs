@@ -102,7 +102,7 @@ namespace FreshFit.UI.ProfileControls
 
         private void ıcnbtnAdd_Click(object sender, EventArgs e)
         {
-            if (txtFoodNameAdd != null && nmrForCaloryUpdating.Value >0 && nmrForFatUpdating.Value > 0 && nmrForCarbonhydrateUpdating.Value > 0)
+            if (txtFoodNameAdd != null && nmrForCaloryUpdating.Value > 0 && nmrForFatUpdating.Value > 0 && nmrForCarbonhydrateUpdating.Value > 0)
             {
                 var checkingBeforeAdding = controllers.GetAllData<Food>().Where(x => x.Name == UserControlFunction.FixingName(txtFoodNameAdd.Text)).ToList();
                 if (checkingBeforeAdding.Count == 0) // aynı yemek adı sistemde varmı diye kontrol yapılıyor aksi halde database'de aynı yemek birden fazla görülür ve update kısmında hata oluşur.
@@ -137,7 +137,7 @@ namespace FreshFit.UI.ProfileControls
                 MessageBox.Show("Silme işlemi başarılı");
                 ListingFood();
             }
-            else { MessageBox.Show("Lütfen listeden bir yemek seçimi yapınız."); }
+            else { MessageBox.Show("Lütfen yeni ekliyeceğiniz yemeğin bilgilerini giriniz."); }
 
         }
 
